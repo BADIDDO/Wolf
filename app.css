@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Sniglet&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Sniglet', cursive;
+    background-color: black;
+}
+ul{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+nav {
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.5px solid gray;
+}
+nav .logo img {
+    height: 50px;
+}
+nav .links ul li {
+    display: inline-flex;
+    padding-left: 60px;
+    position: relative;
+}
+nav .links ul li a{
+    color: white;
+    font-size: 20px;
+    width: 110px;
+}
+nav .links ul li a::after{
+    content: '';
+    background-color: white;
+    height: 2px;
+    width: 0%;
+    position: absolute;
+    top: .5%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 1s;
+}
+nav .links ul li a:hover::after{
+    width: 60%;
+}
+main {
+    color: white;
+    height: 100vh;
+}
+.content {
+    margin-top: 10%;
+    margin-left: 100px;
+    width: 40%;
+    float: left;
+}
+h1{
+    font-size: 50px;
+}
+span {
+    color: orangered;
+}
+p {
+    margin-top: 10px;
+}
+.btns {
+    margin-top: 20px;
+    background-color: white;
+    cursor: pointer;
+    color: #191919;
+    padding: 12px 12px;
+    border: none;
+    border-radius: 20px;
+    margin-right: 20px;
+    font-weight: bold;
+    transition: .5s ease-in;
+}
+.btns:hover {
+    background-color: gray;
+    color: rgb(219, 219, 219);
+}
+main img {
+    width: 30%;
+    float: right;
+    margin-right: 100px;
+    margin-top: 50px;
+    filter: grayscale(1);
+    transition: filter 4s;
+}
+main img:hover {
+    filter: grayscale(0);
+    transition: 4s;
+}
